@@ -70,15 +70,15 @@ def _check(func):
 def qrCallback(uuid, status, qrcode):
     # logger.debug("qrCallback: {} {}".format(uuid,status))
     if status == "0":
-        try:
-            from PIL import Image
+#         try:
+#             from PIL import Image
 
-            img = Image.open(io.BytesIO(qrcode))
-            _thread = threading.Thread(target=img.show, args=("QRCode",))
-            _thread.setDaemon(True)
-            _thread.start()
-        except Exception as e:
-            pass
+#             img = Image.open(io.BytesIO(qrcode))
+#             _thread = threading.Thread(target=img.show, args=("QRCode",))
+#             _thread.setDaemon(True)
+#             _thread.start()
+#         except Exception as e:
+#             pass
 
         import qrcode
 
