@@ -1,4 +1,4 @@
-FROM python:3.10-alpine
+FROM python:3.9.13
 
 LABEL maintainer="foo@bar.com"
 ARG TZ='Asia/Shanghai'
