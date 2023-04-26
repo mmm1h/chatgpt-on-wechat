@@ -38,7 +38,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: mmm1h/chatgpt-on-wechat
+          images: mingming123/chatgpt-on-wechat
           tags: |
             type=raw,value=latest
             type=ref,event=tag
